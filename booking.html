@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Lapangan - MiniSoccer Hub</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Booking Lapangan</h1>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="booking.html">Booking Lapangan</a>
+            <a href="tim.html">Cari Tim</a>
+            <a href="turnamen.html">Turnamen</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Daftar Lapangan</h2>
+
+            <article>
+                <h3>Mini Soccer Stadium</h3>
+
+                <img
+                    src="assets/lapangan.png"
+                    alt="Lapangan Mini Soccer Stadium"
+                    width="400"
+                >
+
+                <p>
+                    Lapangan mini soccer dengan rumput sintetis
+                    dan fasilitas yang lengkap.
+                </p>
+
+                <p>
+                    <strong>Harga:</strong>
+                    Rp150.000 per jam
+                </p>
+            </article>
+        </section>
+
+
+        <section>
+            <h2>Jadwal Lapangan</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Jam</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>08.00 - 09.00</td>
+                        <td>Tersedia</td>
+                        <td>
+                            <a href="#form-booking">Pilih</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>09.00 - 10.00</td>
+                        <td>Tersedia</td>
+                        <td>
+                            <a href="#form-booking">Pilih</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>10.00 - 11.00</td>
+                        <td>Sudah Disewa</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>11.00 - 12.00</td>
+                        <td>Tersedia</td>
+                        <td>
+                            <a href="#form-booking">Pilih</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </section>
+
+
+        <section id="form-booking">
+
+            <h2>Form Penyewaan Lapangan</h2>
+
+            <form>
+
+                <div>
+                    <label for="nama">Nama Pemesan:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="tanggal">Tanggal Booking:</label>
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="jam">Jam Booking:</label>
+
+                    <select id="jam" name="jam">
+
+                        <option value="">
+                            -- Pilih Jam --
+                        </option>
+
+                        <option value="08-09">
+                            08.00 - 09.00
+                        </option>
+
+                        <option value="09-10">
+                            09.00 - 10.00
+                        </option>
+
+                        <option value="11-12">
+                            11.00 - 12.00
+                        </option>
+
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="jumlah">
+                        Jumlah Pemain:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="jumlah"
+                        name="jumlah"
+                        min="1"
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="catatan">
+                        Catatan:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="catatan"
+                        name="catatan"
+                        rows="5"
+                        cols="40"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">
+                    Booking Lapangan
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 MiniSoccer Hub.
+        </p>
+    </footer>
+
+</body>
+</html>
