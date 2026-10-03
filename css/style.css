@@ -1,0 +1,375 @@
+/* =========================================
+   MINI SOCCER HUB
+   External CSS - Minggu 3
+   ========================================= */
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #263238;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: #0b5d3b;
+    color: white;
+    padding: 24px 8%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0 auto 20px;
+    max-width: 700px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #08482e;
+}
+
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ---------- SECTION ---------- */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #0b5d3b;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+
+section h3 {
+    color: #124c3a;
+    font-size: 20px;
+}
+
+
+/* ---------- IMAGE ---------- */
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+/* ---------- ARTICLE / CARD ---------- */
+
+article {
+    background-color: #f8faf9;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #0b5d3b;
+    border-radius: 6px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    margin: 8px 0;
+}
+
+
+/* ---------- LINKS ---------- */
+
+main a {
+    color: #0b5d3b;
+    font-weight: 600;
+}
+
+main a:hover {
+    color: #083c29;
+}
+
+
+/* ---------- LIST ---------- */
+
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li::marker {
+    color: #0b5d3b;
+}
+
+
+/* ---------- TABLE ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #cfd8d5;
+    text-align: left;
+}
+
+th {
+    background-color: #0b5d3b;
+    color: white;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f3;
+}
+
+tbody tr:hover {
+    background-color: #e5efeb;
+}
+
+
+/* ---------- FORM ---------- */
+
+form {
+    max-width: 700px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #263238;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b8c4c0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8bc7ad;
+    border-color: #0b5d3b;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    padding: 11px 20px;
+    background-color: #0b5d3b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08482e;
+}
+
+
+/* ---------- STRONG / HIGHLIGHT ---------- */
+
+strong {
+    font-weight: 700;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   Untuk layar tablet dan mobile
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /*
+       Navigasi berubah dari horizontal
+       menjadi vertikal
+    */
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        background-color: #08482e;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section h3 {
+        font-size: 18px;
+    }
+
+    /*
+       Tabel tetap bisa dibaca
+       pada layar kecil
+    */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+/* ---------- MOBILE KECIL ---------- */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
