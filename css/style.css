@@ -373,3 +373,99 @@ footer p {
         font-size: 14px;
     }
 }
+
+
+/* MiniSoccer Hub - Custom CSS */
+
+:root {
+    --soccer-green: #198754;
+    --soccer-dark: #124c35;
+    --page-background: #f4f7f5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--page-background);
+    color: #263238;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--soccer-dark) !important;
+}
+
+.navbar-brand {
+    letter-spacing: 0.3px;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff;
+}
+
+main section {
+    scroll-margin-top: 24px;
+}
+
+.card {
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: var(--soccer-dark);
+}
+
+.btn-success {
+    background-color: var(--soccer-green);
+    border-color: var(--soccer-green);
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+}
+
+.field-image {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.table {
+    background-color: #ffffff;
+}
+
+footer {
+    margin-top: 24px;
+}
+
+@media (max-width: 767.98px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    main.container {
+        padding-top: 1.5rem !important;
+    }
+
+    .field-image {
+        min-height: 200px;
+        max-height: 280px;
+        border-radius: 0 !important;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}

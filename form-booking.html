@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Booking | MiniSoccer Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">⚽ MiniSoccer Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Lapangan</a></li>
+                <li class="nav-item"><a class="nav-link" href="tim.html">Cari Tim</a></li>
+                <li class="nav-item"><a class="nav-link" href="turnamen.html">Turnamen</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <section class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h1 class="h3 fw-bold">Form Booking Lapangan</h1>
+                    <p class="text-secondary">Isi data berikut untuk contoh pemesanan lapangan.</p>
+
+                    <form action="#" method="get">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Pemesan</label>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lapangan" class="form-label">Pilih Lapangan</label>
+                            <select class="form-select" id="lapangan" name="lapangan" required>
+                                <option value="">-- Pilih Lapangan --</option>
+                                <option value="A">Lapangan A - Mini Soccer Stadium</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="tanggal" class="form-label">Tanggal Booking</label>
+                                <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="jam" class="form-label">Jam Booking</label>
+                                <select class="form-select" id="jam" name="jam" required>
+                                    <option value="">-- Pilih Jam --</option>
+                                    <option value="08-09">08.00–09.00</option>
+                                    <option value="09-10">09.00–10.00</option>
+                                    <option value="11-12">11.00–12.00</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="my-3">
+                            <label for="jumlah" class="form-label">Jumlah Pemain</label>
+                            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="30" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="catatan" class="form-label">Catatan (opsional)</label>
+                            <textarea class="form-control" id="catatan" name="catatan" rows="4" placeholder="Tuliskan catatan tambahan"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Kirim Form</button>
+                        <a href="booking.html" class="btn btn-outline-secondary">Kembali</a>
+
+                        <p class="small text-secondary mt-3 mb-0">
+                            Form ini masih berupa demonstrasi frontend. Pemesanan belum disimpan dan belum dikonfirmasi.
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 MiniSoccer Hub</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

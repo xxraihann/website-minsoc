@@ -1,236 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Tim | MiniSoccer Hub</title>
 
-    <title>Turnamen - MiniSoccer Hub</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Cari Tim Mini Soccer</h1>
-
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="booking.html">Booking Lapangan</a>
-            <a href="tim.html">Cari Tim</a>
-            <a href="turnamen.html">Turnamen</a>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <section>
-            <h2>Daftar Tim</h2>
-
-            <article>
-                <h3>Garuda FC</h3>
-
-                <p>
-                    <strong>Kota:</strong> Bandung
-                </p>
-
-                <p>
-                    <strong>Anggota:</strong> 8 dari 12 pemain
-                </p>
-
-                <p>
-                    Garuda FC sedang mencari pemain tambahan
-                    untuk mengikuti turnamen.
-                </p>
-
-                <a href="#gabung">
-                    Gabung ke Tim
-                </a>
-            </article>
-
-
-            <article>
-                <h3>Galaxy FC</h3>
-
-                <p>
-                    <strong>Kota:</strong> Jakarta
-                </p>
-
-                <p>
-                    <strong>Anggota:</strong> 10 dari 12 pemain
-                </p>
-
-                <p>
-                    Galaxy FC membutuhkan dua pemain tambahan.
-                </p>
-
-                <a href="#gabung">
-                    Gabung ke Tim
-                </a>
-            </article>
-
-        </section>
-
-
-        <section id="gabung">
-
-            <h2>Daftar Bergabung dengan Tim</h2>
-
-            <form>
-
-                <div>
-                    <label for="nama-pemain">
-                        Nama Pemain:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="nama-pemain"
-                        name="nama-pemain"
-                        required
-                    >
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="posisi">
-                        Posisi:
-                    </label>
-
-                    <select
-                        id="posisi"
-                        name="posisi"
-                    >
-                        <option value="">
-                            -- Pilih Posisi --
-                        </option>
-
-                        <option value="kiper">
-                            Kiper
-                        </option>
-
-                        <option value="bek">
-                            Bek
-                        </option>
-
-                        <option value="gelandang">
-                            Gelandang
-                        </option>
-
-                        <option value="penyerang">
-                            Penyerang
-                        </option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="alasan">
-                        Alasan ingin bergabung:
-                    </label>
-
-                    <br>
-
-                    <textarea
-                        id="alasan"
-                        name="alasan"
-                        rows="5"
-                        cols="40"
-                    ></textarea>
-                </div>
-
-                <br>
-
-                <button type="submit">
-                    Kirim Permintaan
-                </button>
-
-            </form>
-
-        </section>
-
-
-        <section>
-
-            <h2>Belum Punya Tim?</h2>
-
-            <p>
-                Kamu juga dapat membuat tim sendiri
-                dan mengajak pemain lain untuk bergabung.
-            </p>
-
-            <a href="#buat-tim">
-                Buat Tim
-            </a>
-
-        </section>
-
-
-        <section id="buat-tim">
-
-            <h2>Form Membuat Tim</h2>
-
-            <form>
-
-                <label for="nama-tim">
-                    Nama Tim:
-                </label>
-
-                <input
-                    type="text"
-                    id="nama-tim"
-                    name="nama-tim"
-                    required
-                >
-
-                <br><br>
-
-                <label for="kota">
-                    Kota:
-                </label>
-
-                <input
-                    type="text"
-                    id="kota"
-                    name="kota"
-                >
-
-                <br><br>
-
-                <label for="deskripsi">
-                    Deskripsi Tim:
-                </label>
-
-                <br>
-
-                <textarea
-                    id="deskripsi"
-                    name="deskripsi"
-                    rows="5"
-                    cols="40"
-                ></textarea>
-
-                <br><br>
-
-                <button type="submit">
-                    Buat Tim
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>
-            &copy; 2026 MiniSoccer Hub.
-        </p>
-    </footer>
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">⚽ MiniSoccer Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Lapangan</a></li>
+                <li class="nav-item"><a class="nav-link active" href="tim.html">Cari Tim</a></li>
+                <li class="nav-item"><a class="nav-link" href="turnamen.html">Turnamen</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <section class="mb-4">
+        <h1 class="fw-bold">Cari Tim Mini Soccer</h1>
+        <p class="text-secondary">Temukan tim yang sedang mencari anggota atau daftarkan tim kamu sendiri.</p>
+    </section>
+
+    <section>
+        <h2 class="h4 fw-bold mb-3">Tim yang Membutuhkan Anggota</h2>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge text-bg-success mb-2">Mencari Pemain</span>
+                        <h3 class="h5 fw-bold">Garuda FC</h3>
+                        <p><strong>Kota:</strong> Bandung</p>
+                        <p><strong>Anggota:</strong> 8 dari 12 pemain</p>
+                        <p>Tim sedang mencari pemain tambahan untuk pertandingan mendatang.</p>
+                        <a href="#form-gabung" class="btn btn-success">Ajukan Bergabung</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge text-bg-success mb-2">Mencari Pemain</span>
+                        <h3 class="h5 fw-bold">Galaxy FC</h3>
+                        <p><strong>Kota:</strong> Jakarta</p>
+                        <p><strong>Anggota:</strong> 10 dari 12 pemain</p>
+                        <p>Tim membuka kesempatan bagi pemain baru untuk bergabung.</p>
+                        <a href="#form-gabung" class="btn btn-success">Ajukan Bergabung</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-gabung" class="mt-4">
+        <h2 class="h4 fw-bold">Form Bergabung dengan Tim</h2>
+
+        <form action="#" method="get">
+            <div class="mb-3">
+                <label for="nama-pemain" class="form-label">Nama Pemain</label>
+                <input type="text" class="form-control" id="nama-pemain" name="nama-pemain" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="pilih-tim" class="form-label">Pilih Tim</label>
+                <select class="form-select" id="pilih-tim" name="pilih-tim" required>
+                    <option value="">-- Pilih Tim --</option>
+                    <option value="garuda">Garuda FC</option>
+                    <option value="galaxy">Galaxy FC</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="posisi" class="form-label">Posisi Bermain</label>
+                <select class="form-select" id="posisi" name="posisi" required>
+                    <option value="">-- Pilih Posisi --</option>
+                    <option value="kiper">Kiper</option>
+                    <option value="bek">Bek</option>
+                    <option value="gelandang">Gelandang</option>
+                    <option value="penyerang">Penyerang</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success">Kirim Permintaan</button>
+        </form>
+
+        <p class="small text-secondary mt-3">Data tim dan permintaan bergabung masih berupa contoh.</p>
+    </section>
+
+    <section id="buat-tim" class="mt-4">
+        <h2 class="h4 fw-bold">Buat Tim Baru</h2>
+
+        <form action="#" method="get">
+            <div class="mb-3">
+                <label for="nama-tim" class="form-label">Nama Tim</label>
+                <input type="text" class="form-control" id="nama-tim" name="nama-tim" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="kota" class="form-label">Kota</label>
+                <input type="text" class="form-control" id="kota" name="kota" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="deskripsi" class="form-label">Deskripsi Tim</label>
+                <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Buat Tim</button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 MiniSoccer Hub</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

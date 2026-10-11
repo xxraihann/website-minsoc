@@ -1,141 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSoccer Hub | Beranda</title>
 
-    <title>MiniSoccer Hub</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>MiniSoccer Hub</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">⚽ MiniSoccer Hub</a>
 
-        <p>
-            Platform untuk booking lapangan, mencari tim,
-            dan menemukan turnamen mini soccer.
-        </p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <!-- Navigasi -->
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="booking.html">Booking Lapangan</a>
-            <a href="tim.html">Cari Tim</a>
-            <a href="turnamen.html">Turnamen</a>
-        </nav>
-    </header>
-
-
-    <!-- Konten utama -->
-    <main>
-
-        <!-- Section tentang website -->
-        <section>
-            <h2>Selamat Datang di MiniSoccer Hub</h2>
-
-            <p>
-                MiniSoccer Hub adalah platform yang membantu
-                pemain mini soccer untuk menemukan lapangan,
-                melihat jadwal yang tersedia, mencari tim,
-                dan mendapatkan informasi turnamen.
-            </p>
-
-            <img
-                src="assets/lapangan.png"
-                alt="Lapangan mini soccer dengan rumput sintetis"
-                width="500"
-            >
-        </section>
-
-
-        <!-- Section layanan -->
-        <section>
-    <h2>Layanan Kami</h2>
-
-    <div class="service-container">
-
-        <article>
-            <h3>Booking Lapangan</h3>
-
-            <p>
-                Cari lapangan mini soccer dan lihat jadwal
-                yang tersedia sesuai tanggal dan waktu
-                yang kamu inginkan.
-            </p>
-
-            <a href="booking.html">Lihat Lapangan</a>
-        </article>
-
-        <article>
-            <h3>Cari atau Buat Tim</h3>
-
-            <p>
-                Belum punya tim? Kamu dapat mencari tim
-                yang masih membutuhkan anggota atau membuat
-                tim sendiri.
-            </p>
-
-            <a href="tim.html">Cari Tim</a>
-        </article>
-
-        <article>
-            <h3>Turnamen</h3>
-
-            <p>
-                Temukan berbagai informasi turnamen mini
-                soccer dan daftarkan tim kamu.
-            </p>
-
-            <a href="turnamen.html">Lihat Turnamen</a>
-        </article>
-
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="booking.html">Lapangan</a></li>
+                <li class="nav-item"><a class="nav-link" href="tim.html">Cari Tim</a></li>
+                <li class="nav-item"><a class="nav-link" href="turnamen.html">Turnamen</a></li>
+            </ul>
+        </div>
     </div>
-</section>
+</nav>
 
-
-        <!-- Section turnamen terbaru -->
-        <section>
-            <h2>Turnamen Terbaru</h2>
-
-            <article>
-                <h3>Mini Soccer Cup 2026</h3>
-
-                <p>
-                    Turnamen mini soccer terbuka untuk tim
-                    dari berbagai daerah.
+<main>
+    <section class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-7">
+                <span class="badge text-bg-success mb-3">Platform Mini Soccer</span>
+                <h1 class="display-5 fw-bold">Temukan Lapangan, Bangun Tim, Menangkan Turnamen!</h1>
+                <p class="lead mt-3">
+                    Temukan lapangan mini soccer, periksa jadwal,
+                    cari teman bermain, dan dapatkan informasi turnamen
+                    dalam satu platform.
                 </p>
+                <a href="booking.html" class="btn btn-success me-2 mb-2">Cari Lapangan</a>
+                <a href="turnamen.html" class="btn btn-outline-success mb-2">Lihat Turnamen</a>
+            </div>
 
-                <p>
-                    <strong>Tanggal:</strong>
-                    10 Oktober 2026
-                </p>
+            <div class="col-12 col-md-5">
+                <img src="assets/lapangan.png" class="img-fluid rounded shadow" alt="Lapangan mini soccer dengan rumput sintetis">
+            </div>
+        </div>
+    </section>
 
-                <p>
-                    <strong>Lokasi:</strong>
-                    Mini Soccer Stadium
-                </p>
+    <section class="container pb-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Layanan Kami</h2>
+            <p class="text-secondary">Semua kebutuhan mini soccer dalam satu platform.</p>
+        </div>
 
-                <a href="turnamen.html">
-                    Lihat Detail Turnamen
-                </a>
-            </article>
-        </section>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 card-title fw-bold">Booking Lapangan</h3>
+                        <p class="card-text">Cari lapangan, periksa jadwal tersedia, dan pilih waktu bermain.</p>
+                        <a href="booking.html" class="btn btn-outline-success">Lihat Lapangan</a>
+                    </div>
+                </article>
+            </div>
 
-    </main>
+            <div class="col-12 col-md-4">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 card-title fw-bold">Cari atau Buat Tim</h3>
+                        <p class="card-text">Belum punya tim? Temukan tim yang membutuhkan anggota atau buat tim sendiri.</p>
+                        <a href="tim.html" class="btn btn-outline-success">Cari Tim</a>
+                    </div>
+                </article>
+            </div>
 
+            <div class="col-12 col-md-4">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 card-title fw-bold">Turnamen</h3>
+                        <p class="card-text">Cari informasi turnamen, jadwal kegiatan, dan persyaratan pendaftaran.</p>
+                        <a href="turnamen.html" class="btn btn-outline-success">Lihat Turnamen</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            &copy; 2026 MiniSoccer Hub.
-            Semua hak dilindungi.
-        </p>
-    </footer>
+    <section class="container pb-5">
+        <div class="card border-success">
+            <div class="card-body">
+                <h2 class="h4 fw-bold">Mulai Bermain Hari Ini!</h2>
+                <p>Temukan lapangan dan rencanakan pertandingan bersama teman-temanmu.</p>
+                <a href="form-booking.html" class="btn btn-success">Booking Sekarang</a>
+            </div>
+        </div>
+    </section>
+</main>
 
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p class="mb-1">&copy; 2026 MiniSoccer Hub</p>
+        <p class="small mb-0">Platform komunitas mini soccer.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
