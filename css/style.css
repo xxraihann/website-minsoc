@@ -469,3 +469,42 @@ footer {
         padding: 10px 0;
     }
 }
+
+/* Tambahan untuk Tugas JavaScript dan jQuery */
+
+.summary-card {
+    border-left: 4px solid #198754;
+    background-color: #ffffff;
+}
+
+#area-form-booking,
+#info-booking {
+    scroll-margin-top: 20px;
+}
+
+#pesan-booking {
+    overflow-wrap: anywhere;
+}
+
+#jadwal-body td {
+    vertical-align: middle;
+}
+
+#tombol-booking,
+#tombol-info {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .summary-card .display-6 {
+        font-size: 2rem;
+    }
+
+    #area-form-booking .card-body {
+        padding: 1rem !important;
+    }
+
+    .table {
+        font-size: 0.875rem;
+    }
+}
