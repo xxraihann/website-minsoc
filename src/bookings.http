@@ -1,0 +1,50 @@
+
+### 1. CREATE - Menambahkan booking
+POST http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+  "namaPemesan": "Budi Santoso",
+  "email": "budi@gmail.com",
+  "namaLapangan": "Lapangan A",
+  "tanggal": "2026-11-20",
+  "jam": "19:00",
+  "durasi": 2,
+  "jumlahPemain": 10
+}
+
+### 2. GET ALL - Melihat semua booking
+GET http://localhost:3000/bookings
+
+### 3. GET ONE - Melihat booking berdasarkan ID
+GET http://localhost:3000/bookings/1
+
+### 4. UPDATE - Mengubah booking
+PATCH http://localhost:3000/bookings/1
+Content-Type: application/json
+
+{
+  "durasi": 3,
+  "jumlahPemain": 12
+}
+
+### 5. DELETE - Menghapus booking
+DELETE http://localhost:3000/bookings/1
+### ERROR 1 - Booking tidak ditemukan
+GET http://localhost:3000/bookings/999
+
+
+### 2. CONFLICT TEST - Booking duplikat
+
+POST http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+  "namaPemesan": "Budi Santoso",
+  "email": "budi@gmail.com",
+  "namaLapangan": "Lapangan A",
+  "tanggal": "2026-11-20",
+  "jam": "19:00",
+  "durasi": 2,
+  "jumlahPemain": 10
+}
