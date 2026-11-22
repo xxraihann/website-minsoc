@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Booking {
+  id           Int    @id @default(autoincrement())
+  namaPemesan  String
+  email        String
+  namaLapangan String
+  tanggal      String
+  jam          String
+  durasi       Int
+  jumlahPemain Int
+  status       String @default("Menunggu Konfirmasi")
+
+  @@unique([namaLapangan, tanggal, jam])
+  @@map("bookings")
+}
